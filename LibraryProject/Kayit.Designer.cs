@@ -43,6 +43,7 @@ namespace LibraryProject
             this.sifrekontroltextBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.sifreinfo = new System.Windows.Forms.Label();
+            this.sifrekontrolinfo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // isimtextBox
@@ -166,11 +167,20 @@ namespace LibraryProject
             this.sifreinfo.Size = new System.Drawing.Size(0, 25);
             this.sifreinfo.TabIndex = 14;
             // 
+            // sifrekontrolinfo
+            // 
+            this.sifrekontrolinfo.AutoSize = true;
+            this.sifrekontrolinfo.Location = new System.Drawing.Point(398, 380);
+            this.sifrekontrolinfo.Name = "sifrekontrolinfo";
+            this.sifrekontrolinfo.Size = new System.Drawing.Size(0, 25);
+            this.sifrekontrolinfo.TabIndex = 15;
+            // 
             // Kayit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(702, 524);
+            this.Controls.Add(this.sifrekontrolinfo);
             this.Controls.Add(this.sifreinfo);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
@@ -208,5 +218,6 @@ namespace LibraryProject
         private System.Windows.Forms.TextBox sifrekontroltextBox;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label sifreinfo;
+        private System.Windows.Forms.Label sifrekontrolinfo;
     }
 }
