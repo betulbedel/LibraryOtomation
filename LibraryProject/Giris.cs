@@ -23,5 +23,12 @@ namespace LibraryProject
             Kayit kayitekrani = new Kayit();
             kayitekrani.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide(); //Pencere gizlemek icin
+            AdminPanel adminpanel = new AdminPanel();
+            adminpanel.Show();
+        }
     }
 }
