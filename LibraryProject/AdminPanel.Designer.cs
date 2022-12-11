@@ -45,6 +45,7 @@ namespace LibraryProject
             this.label1 = new System.Windows.Forms.Label();
             this.kitapismitextbox = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.sayfainfo = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -61,6 +62,7 @@ namespace LibraryProject
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.sayfainfo);
             this.tabPage1.Controls.Add(this.comboBox1);
             this.tabPage1.Controls.Add(this.dateTimePicker1);
             this.tabPage1.Controls.Add(this.label5);
@@ -115,6 +117,7 @@ namespace LibraryProject
             this.copytextBox.Name = "copytextBox";
             this.copytextBox.Size = new System.Drawing.Size(220, 31);
             this.copytextBox.TabIndex = 11;
+            this.copytextBox.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.copytextBox_PreviewKeyDown);
             // 
             // label6
             // 
@@ -131,6 +134,7 @@ namespace LibraryProject
             this.sayfatextBox.Name = "sayfatextBox";
             this.sayfatextBox.Size = new System.Drawing.Size(220, 31);
             this.sayfatextBox.TabIndex = 9;
+            this.sayfatextBox.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.sayfatextBox_PreviewKeyDown);
             // 
             // label3
             // 
@@ -165,6 +169,7 @@ namespace LibraryProject
             this.yazartextBox.Name = "yazartextBox";
             this.yazartextBox.Size = new System.Drawing.Size(220, 31);
             this.yazartextBox.TabIndex = 3;
+            this.yazartextBox.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.yazartextBox_PreviewKeyDown);
             // 
             // button1
             // 
@@ -193,6 +198,7 @@ namespace LibraryProject
             this.kitapismitextbox.Name = "kitapismitextbox";
             this.kitapismitextbox.Size = new System.Drawing.Size(220, 31);
             this.kitapismitextbox.TabIndex = 0;
+            this.kitapismitextbox.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.kitapismitextbox_PreviewKeyDown);
             // 
             // tabPage2
             // 
@@ -203,6 +209,14 @@ namespace LibraryProject
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // sayfainfo
+            // 
+            this.sayfainfo.AutoSize = true;
+            this.sayfainfo.Location = new System.Drawing.Point(310, 445);
+            this.sayfainfo.Name = "sayfainfo";
+            this.sayfainfo.Size = new System.Drawing.Size(0, 25);
+            this.sayfainfo.TabIndex = 15;
             // 
             // AdminPanel
             // 
@@ -237,5 +251,6 @@ namespace LibraryProject
         private System.Windows.Forms.TextBox kitapismitextbox;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label sayfainfo;
     }
 }
