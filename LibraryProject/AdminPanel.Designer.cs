@@ -31,6 +31,8 @@ namespace LibraryProject
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.basarilitextBox = new System.Windows.Forms.TextBox();
+            this.sayfainfo = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
@@ -45,7 +47,6 @@ namespace LibraryProject
             this.label1 = new System.Windows.Forms.Label();
             this.kitapismitextbox = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.sayfainfo = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -62,6 +63,7 @@ namespace LibraryProject
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.basarilitextBox);
             this.tabPage1.Controls.Add(this.sayfainfo);
             this.tabPage1.Controls.Add(this.comboBox1);
             this.tabPage1.Controls.Add(this.dateTimePicker1);
@@ -84,10 +86,32 @@ namespace LibraryProject
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // basarilitextBox
+            // 
+            this.basarilitextBox.BackColor = System.Drawing.Color.PaleGreen;
+            this.basarilitextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.basarilitextBox.Font = new System.Drawing.Font("Book Antiqua", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.basarilitextBox.ForeColor = System.Drawing.Color.DarkGreen;
+            this.basarilitextBox.Location = new System.Drawing.Point(152, 16);
+            this.basarilitextBox.Name = "basarilitextBox";
+            this.basarilitextBox.Size = new System.Drawing.Size(393, 22);
+            this.basarilitextBox.TabIndex = 16;
+            this.basarilitextBox.Text = "Kitap Başarıyla Eklendi.";
+            this.basarilitextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.basarilitextBox.Visible = false;
+            // 
+            // sayfainfo
+            // 
+            this.sayfainfo.AutoSize = true;
+            this.sayfainfo.Location = new System.Drawing.Point(310, 445);
+            this.sayfainfo.Name = "sayfainfo";
+            this.sayfainfo.Size = new System.Drawing.Size(0, 25);
+            this.sayfainfo.TabIndex = 15;
+            // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(17, 248);
+            this.comboBox1.Location = new System.Drawing.Point(16, 275);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(182, 33);
             this.comboBox1.TabIndex = 14;
@@ -97,7 +121,7 @@ namespace LibraryProject
             // 
             this.dateTimePicker1.CustomFormat = "yyyy";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(17, 347);
+            this.dateTimePicker1.Location = new System.Drawing.Point(16, 374);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(220, 31);
             this.dateTimePicker1.TabIndex = 13;
@@ -105,7 +129,7 @@ namespace LibraryProject
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(17, 496);
+            this.label5.Location = new System.Drawing.Point(16, 523);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(50, 25);
             this.label5.TabIndex = 12;
@@ -113,7 +137,7 @@ namespace LibraryProject
             // 
             // copytextBox
             // 
-            this.copytextBox.Location = new System.Drawing.Point(17, 540);
+            this.copytextBox.Location = new System.Drawing.Point(16, 567);
             this.copytextBox.Name = "copytextBox";
             this.copytextBox.Size = new System.Drawing.Size(220, 31);
             this.copytextBox.TabIndex = 11;
@@ -122,7 +146,7 @@ namespace LibraryProject
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(17, 402);
+            this.label6.Location = new System.Drawing.Point(16, 429);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(104, 25);
             this.label6.TabIndex = 10;
@@ -130,7 +154,7 @@ namespace LibraryProject
             // 
             // sayfatextBox
             // 
-            this.sayfatextBox.Location = new System.Drawing.Point(17, 445);
+            this.sayfatextBox.Location = new System.Drawing.Point(16, 472);
             this.sayfatextBox.Name = "sayfatextBox";
             this.sayfatextBox.Size = new System.Drawing.Size(220, 31);
             this.sayfatextBox.TabIndex = 9;
@@ -139,7 +163,7 @@ namespace LibraryProject
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 207);
+            this.label3.Location = new System.Drawing.Point(19, 234);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(47, 25);
             this.label3.TabIndex = 8;
@@ -148,7 +172,7 @@ namespace LibraryProject
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(17, 304);
+            this.label4.Location = new System.Drawing.Point(16, 331);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(86, 25);
             this.label4.TabIndex = 6;
@@ -157,7 +181,7 @@ namespace LibraryProject
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 110);
+            this.label2.Location = new System.Drawing.Point(16, 137);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 25);
             this.label2.TabIndex = 4;
@@ -165,7 +189,7 @@ namespace LibraryProject
             // 
             // yazartextBox
             // 
-            this.yazartextBox.Location = new System.Drawing.Point(17, 154);
+            this.yazartextBox.Location = new System.Drawing.Point(16, 181);
             this.yazartextBox.Name = "yazartextBox";
             this.yazartextBox.Size = new System.Drawing.Size(220, 31);
             this.yazartextBox.TabIndex = 3;
@@ -175,7 +199,7 @@ namespace LibraryProject
             // 
             this.button1.BackColor = System.Drawing.Color.Chocolate;
             this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button1.Location = new System.Drawing.Point(54, 612);
+            this.button1.Location = new System.Drawing.Point(53, 639);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(134, 47);
             this.button1.TabIndex = 2;
@@ -186,7 +210,7 @@ namespace LibraryProject
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 18);
+            this.label1.Location = new System.Drawing.Point(16, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 25);
             this.label1.TabIndex = 1;
@@ -194,7 +218,7 @@ namespace LibraryProject
             // 
             // kitapismitextbox
             // 
-            this.kitapismitextbox.Location = new System.Drawing.Point(17, 59);
+            this.kitapismitextbox.Location = new System.Drawing.Point(16, 86);
             this.kitapismitextbox.Name = "kitapismitextbox";
             this.kitapismitextbox.Size = new System.Drawing.Size(220, 31);
             this.kitapismitextbox.TabIndex = 0;
@@ -210,19 +234,11 @@ namespace LibraryProject
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // sayfainfo
-            // 
-            this.sayfainfo.AutoSize = true;
-            this.sayfainfo.Location = new System.Drawing.Point(310, 445);
-            this.sayfainfo.Name = "sayfainfo";
-            this.sayfainfo.Size = new System.Drawing.Size(0, 25);
-            this.sayfainfo.TabIndex = 15;
-            // 
             // AdminPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(823, 799);
+            this.ClientSize = new System.Drawing.Size(823, 784);
             this.Controls.Add(this.tabControl1);
             this.Name = "AdminPanel";
             this.Text = "AdminPanel";
@@ -252,5 +268,6 @@ namespace LibraryProject
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label sayfainfo;
+        private System.Windows.Forms.TextBox basarilitextBox;
     }
 }

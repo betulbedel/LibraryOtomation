@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace LibraryProject
 {
@@ -98,21 +99,22 @@ namespace LibraryProject
                 return;
             }
 
+            Kitap kitap = new Kitap();
 
-            string kitapismi = kitapismitextbox.Text;
-            string yazar = yazartextBox.Text;
-            string tur = (string)comboBox1.SelectedItem;
-            string basimyili=dateTimePicker1.Value.Year.ToString();
-            string sayfasayisi = sayfatextBox.Text;
-            string adetsayisi = copytextBox.Text;
+            kitap.isim = kitapismitextbox.Text;
+            kitap.yazar = yazartextBox.Text;
+            kitap.tur = (string)comboBox1.SelectedItem;
+            kitap.basimyili=dateTimePicker1.Value.Year.ToString();
+            kitap.sayfasayisi = Convert.ToInt32(sayfatextBox.Text);
+            kitap.kopyasayisi = copytextBox.Text;
 
-            string connectionstring = "Server= LAPTOP-2AAHS9KO\\SQLEXPRESS;Database= master;Integrated Security= True";
-            SqlConnection connection = new SqlConnection(connectionstring);
-            string query = $"insert into dbo.books (id, name, author, pubyear, copycount, type, pagecount) values ('0','{kitapismi}','{yazar}','{basimyili}','{adetsayisi}','{tur}','{sayfasayisi}');";
-            connection.Open();
-            SqlCommand command = new SqlCommand(query,connection);
-            command.ExecuteNonQuery();
-            connection.Close();
+            Helper.AddBookToDatabase(kitap);
+            // MessageBox.Show("Kitap başarıyla eklendi."); //
+
+            basarilitextBox.Visible = true;
+            /* Thread.Sleep(3000);
+            basarilitextBox.Visible = false; */
+            
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
