@@ -9,6 +9,7 @@ namespace LibraryProject
 {
     public static class Helper
     {
+        const string connectionstring = "Server= LAPTOP-2AAHS9KO\\SQLEXPRESS;Database= master;Integrated Security= True";
         public static SifreDurumu isPasswordValid(string password)
         {
             
@@ -46,13 +47,48 @@ namespace LibraryProject
 
         public static void AddBookToDatabase(Kitap k)
         {
-            string connectionstring = "Server= LAPTOP-2AAHS9KO\\SQLEXPRESS;Database= master;Integrated Security= True";
             SqlConnection connection = new SqlConnection(connectionstring);
-            string query = $"insert into dbo.books (id, name, author, pubyear, copycount, type, pagecount) values ('0','{k.isim}','{k.yazar}','{k.basimyili}','{k.kopyasayisi}','{k.tur}','{k.sayfasayisi}');";
+            string findid = "SELECT MAX(id) from dbo.books;";
+            SqlCommand findidcommand = new SqlCommand(findid, connection);
             connection.Open();
+
+            object a = findidcommand.ExecuteScalar();
+            int id = 0;
+
+            if (!(a is DBNull))
+            {
+                id = ((int)a) + 1;
+            }
+
+            string query = $"insert into dbo.books (id, name, author, pubyear, copycount, type, pagecount) values ('{id}','{k.isim}','{k.yazar}','{k.basimyili}','{k.kopyasayisi}','{k.tur}','{k.sayfasayisi}');";
+            
             SqlCommand command = new SqlCommand(query, connection);
             command.ExecuteNonQuery();
             connection.Close();
+        }
+
+        public static void AddUserToDatabase(User u)
+        {
+            SqlConnection connection = new SqlConnection(connectionstring);
+            string finduserid = "SELECT MAX(id) from dbo.users;";
+            SqlCommand findidcommand = new SqlCommand(finduserid, connection);
+            connection.Open();
+
+            object a = findidcommand.ExecuteScalar();
+            int id = 0;
+
+            if (!(a is DBNull))
+            {
+                id = ((int)a) + 1;
+            }
+           
+
+            string query = $"insert into dbo.users (id,name,surname,username,mail,password,status,borrowbooks,borrowdate,duedate,penalty) values('{id}','{u.isim}','{u.soyisim}','{u.kullaniciadi}','{u.mailadresi}','{u.sifre}','0','0','{null}','{null}','0');";
+
+            SqlCommand command = new SqlCommand(query, connection);
+            command.ExecuteNonQuery();
+            connection.Close();
+
         }
     }
 }

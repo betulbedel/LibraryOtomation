@@ -84,6 +84,11 @@ namespace LibraryProject
                 sifrekontrolinfo.Text = "Şifre birbiriyle eşleşmelidir.";
                 return;
             }
+
+
+            User u = new User(isimtextBox.Text,soyisimtextBox.Text,kullaniciaditextBox.Text,mailtextBox.Text,sifretextBox.Text);
+            Helper.AddUserToDatabase(u);
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -121,5 +126,7 @@ namespace LibraryProject
             sifrekontroltextBox.BackColor = Color.White;
             sifrekontrolinfo.Text = string.Empty;
         }
+
+
     }
 }

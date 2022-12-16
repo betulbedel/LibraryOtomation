@@ -58,18 +58,22 @@ namespace LibraryProject
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Book Antiqua", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
             this.label1.Location = new System.Drawing.Point(101, 56);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 25);
+            this.label1.Size = new System.Drawing.Size(51, 23);
             this.label1.TabIndex = 2;
             this.label1.Text = "İsim:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Book Antiqua", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.SaddleBrown;
             this.label2.Location = new System.Drawing.Point(74, 126);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 25);
+            this.label2.Size = new System.Drawing.Size(80, 23);
             this.label2.TabIndex = 4;
             this.label2.Text = "Soyisim:";
             // 
@@ -84,9 +88,11 @@ namespace LibraryProject
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Book Antiqua", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.SaddleBrown;
             this.label3.Location = new System.Drawing.Point(48, 191);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(111, 25);
+            this.label3.Size = new System.Drawing.Size(124, 23);
             this.label3.TabIndex = 6;
             this.label3.Text = "Kullanıcı Adı:";
             // 
@@ -101,9 +107,11 @@ namespace LibraryProject
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Book Antiqua", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.SaddleBrown;
             this.label4.Location = new System.Drawing.Point(101, 316);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 25);
+            this.label4.Size = new System.Drawing.Size(52, 23);
             this.label4.TabIndex = 8;
             this.label4.Text = "Şifre:";
             // 
@@ -118,9 +126,11 @@ namespace LibraryProject
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Book Antiqua", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.SaddleBrown;
             this.label5.Location = new System.Drawing.Point(48, 380);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(107, 25);
+            this.label5.Size = new System.Drawing.Size(117, 23);
             this.label5.TabIndex = 10;
             this.label5.Text = "Şifre(Tekrar):";
             // 
@@ -135,9 +145,11 @@ namespace LibraryProject
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Book Antiqua", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.Color.SaddleBrown;
             this.label6.Location = new System.Drawing.Point(48, 257);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(104, 25);
+            this.label6.Size = new System.Drawing.Size(111, 23);
             this.label6.TabIndex = 12;
             this.label6.Text = "Mail Adresi:";
             // 
@@ -152,6 +164,8 @@ namespace LibraryProject
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Chocolate;
+            this.button1.Font = new System.Drawing.Font("Book Antiqua", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.Location = new System.Drawing.Point(201, 440);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(122, 43);
@@ -180,6 +194,7 @@ namespace LibraryProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PapayaWhip;
             this.ClientSize = new System.Drawing.Size(702, 524);
             this.Controls.Add(this.sifrekontrolinfo);
             this.Controls.Add(this.sifreinfo);
