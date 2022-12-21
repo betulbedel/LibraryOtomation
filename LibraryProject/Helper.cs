@@ -90,5 +90,66 @@ namespace LibraryProject
             connection.Close();
 
         }
+
+        
+        public static User IsUserExist(string kullaniciadi, string sifre)
+        {
+            SqlConnection connection = new SqlConnection(connectionstring);
+            string query = $"select * from dbo.users where username = '{kullaniciadi}' and password='{sifre}';";
+            SqlCommand command = new SqlCommand(query,connection);
+            connection.Open();
+            SqlDataReader reader= command.ExecuteReader();
+            if (!reader.HasRows)
+            {
+                return null;
+
+            }
+            reader.Read();
+            User user = new User(reader["name"].ToString(), reader["surname"].ToString(), reader["username"].ToString(), reader["mail"].ToString(), reader["password"].ToString());
+            user.status = reader["status"].ToString();
+            connection.Close();
+            return user;
+        }
+
+        public static List<User> GetUserList(string isim, string soyisim)
+        {
+            SqlConnection connection = new SqlConnection(connectionstring);
+            string query = $"select * from dbo.users where name like '%{isim}%' and surname like '%{soyisim}%';";
+            SqlCommand command = new SqlCommand(query, connection);
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            if (!reader.HasRows)
+            {
+                return null;
+
+            }
+            List<User> users = new List<User>(); 
+
+            while (reader.Read())
+            {
+                if (reader["status"].ToString() == "1")
+                {
+                    continue; //admin olanları listelemez.
+                }
+                User user = new User(reader["name"].ToString(), reader["surname"].ToString(), reader["username"].ToString(), reader["mail"].ToString(), reader["password"].ToString());
+                user.id = reader["id"].ToString();
+                users.Add(user);
+
+            }
+            connection.Close();
+            return users;
+        }
+
+        public static void UpdateUser(User user)
+        {
+            SqlConnection connection = new SqlConnection(connectionstring);
+            string query = $"update dbo.users set name='{user.isim}',surname='{user.soyisim}',username='{user.kullaniciadi}',password='{user.sifre}',status='1' where id={user.id};";
+            SqlCommand command = new SqlCommand(query, connection);
+            connection.Open();
+            command.ExecuteNonQuery();
+            connection.Close();
+
+
+        }
     }
 }
