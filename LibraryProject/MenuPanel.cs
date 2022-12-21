@@ -37,5 +37,18 @@ namespace LibraryProject
             UyeEklePanel uyeklepanel = new UyeEklePanel();
             uyeklepanel.Show();
         }
+
+        private void cikisbutton_Click(object sender, EventArgs e)
+        {
+            Program.giris.Logout(); //hide and destroy menupanel on logout
+
+        }
+
+        private void admineklebutton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AdminEklePanel adminekle = new AdminEklePanel();
+            adminekle.Show();
+        }
     }
 }

@@ -187,6 +187,7 @@ namespace LibraryProject
             this.admineklebutton.TabIndex = 11;
             this.admineklebutton.Text = "ADMİN EKLE";
             this.admineklebutton.UseVisualStyleBackColor = false;
+            this.admineklebutton.Click += new System.EventHandler(this.admineklebutton_Click);
             // 
             // button5
             // 
@@ -248,6 +249,7 @@ namespace LibraryProject
             this.cikisbutton.TabIndex = 17;
             this.cikisbutton.Text = "ÇIKIŞ YAP";
             this.cikisbutton.UseVisualStyleBackColor = false;
+            this.cikisbutton.Click += new System.EventHandler(this.cikisbutton_Click);
             // 
             // pictureBox1
             // 
