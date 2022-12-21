@@ -30,8 +30,8 @@ namespace LibraryProject
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.kullanicitextBox = new System.Windows.Forms.TextBox();
+            this.sifretextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -50,20 +50,20 @@ namespace LibraryProject
             this.label1.TabIndex = 0;
             this.label1.Text = "Kullanıcı Adı:";
             // 
-            // textBox1
+            // kullanicitextBox
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBox1.Location = new System.Drawing.Point(242, 85);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(150, 31);
-            this.textBox1.TabIndex = 1;
+            this.kullanicitextBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.kullanicitextBox.Location = new System.Drawing.Point(242, 85);
+            this.kullanicitextBox.Name = "kullanicitextBox";
+            this.kullanicitextBox.Size = new System.Drawing.Size(150, 31);
+            this.kullanicitextBox.TabIndex = 1;
             // 
-            // textBox2
+            // sifretextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(242, 158);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(150, 31);
-            this.textBox2.TabIndex = 3;
+            this.sifretextBox.Location = new System.Drawing.Point(242, 158);
+            this.sifretextBox.Name = "sifretextBox";
+            this.sifretextBox.Size = new System.Drawing.Size(150, 31);
+            this.sifretextBox.TabIndex = 3;
             // 
             // label2
             // 
@@ -122,9 +122,9 @@ namespace LibraryProject
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.sifretextBox);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.kullanicitextBox);
             this.Controls.Add(this.label1);
             this.Name = "Giris";
             this.Text = "Form1";
@@ -136,8 +136,8 @@ namespace LibraryProject
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox kullanicitextBox;
+        private System.Windows.Forms.TextBox sifretextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;

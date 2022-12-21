@@ -15,6 +15,13 @@ namespace LibraryProject
         public Giris()
         {
             InitializeComponent();
+            Program.giris = this;
+        }
+        public void Logout()
+        {
+            Program.menu.Hide();
+            Program.menu = null;
+            this.Show();
         }
 
         private void kayitolbuttonclick(object sender, EventArgs e)
@@ -26,9 +33,35 @@ namespace LibraryProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide(); //Pencere gizlemek icin
-            AdminPanel adminpanel = new AdminPanel();
-            adminpanel.Show();
+            
+
+            if (string.IsNullOrEmpty(kullanicitextBox.Text))
+            {
+                MessageBox.Show("Lütfen kullanıcı adını doldurunuz.");
+                return;
+            }
+            if (string.IsNullOrEmpty(sifretextBox.Text))
+            {
+                MessageBox.Show("Lütfen şifreyi giriniz.");
+                return;
+            }
+            Program.CurrentUser = Helper.IsUserExist(kullanicitextBox.Text,sifretextBox.Text);
+            if (Program.CurrentUser == null)
+            {
+                MessageBox.Show("Kullanıcı adı veya şifre yanlış.");
+                return;
+            }
+            MessageBox.Show("Giriş başarılı", " TEBRİKLER", MessageBoxButtons.OK );
+
+            if (Program.CurrentUser.status == "1")
+            {
+                this.Hide(); //Pencere gizlemek icin
+                /* AdminPanel adminpanel = new AdminPanel();
+                 adminpanel.Show(); */
+                Program.menu = new MenuPanel();
+                Program.menu.Show();
+                
+            }
         }
     }
 }
