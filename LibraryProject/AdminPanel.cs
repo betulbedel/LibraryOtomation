@@ -141,5 +141,12 @@ namespace LibraryProject
         {
             copytextBox.BackColor = Color.White;
         }
+
+        private void anasayfabutton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuPanel menupanel = new MenuPanel();
+            menupanel.Show();
+        }
     }
 }
