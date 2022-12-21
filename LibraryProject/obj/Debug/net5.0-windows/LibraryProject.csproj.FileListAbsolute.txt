@@ -48,3 +48,7 @@ C:\Users\bedel\LibraryOtomation\LibraryProject\bin\Debug\net5.0-windows\runtimes
 C:\Users\bedel\LibraryOtomation\LibraryProject\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\bedel\LibraryOtomation\LibraryProject\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\bedel\LibraryOtomation\LibraryProject\obj\Debug\net5.0-windows\LibraryProject.csproj.CopyComplete
+C:\Users\bedel\LibraryOtomation\LibraryProject\obj\Debug\net5.0-windows\LibraryProject.MenuPanel.resources
+C:\Users\bedel\LibraryOtomation\LibraryProject\obj\Debug\net5.0-windows\LibraryProject.UyeEklePanel.resources
+C:\Users\bedel\LibraryOtomation\LibraryProject\obj\Debug\net5.0-windows\LibraryProject.UyeIslemPanel.resources
+C:\Users\bedel\LibraryOtomation\LibraryProject\obj\Debug\net5.0-windows\LibraryProject.AdminEklePanel.resources
