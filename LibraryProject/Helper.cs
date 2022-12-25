@@ -83,7 +83,7 @@ namespace LibraryProject
             }
            
 
-            string query = $"insert into dbo.users (id,name,surname,username,mail,password,status,borrowbooks,borrowdate,duedate,penalty) values('{id}','{u.isim}','{u.soyisim}','{u.kullaniciadi}','{u.mailadresi}','{u.sifre}','0','0','{null}','{null}','0');";
+            string query = $"insert into dbo.users (id,name,surname,username,mail,password,status,borrowbooks,borrowdate,duedate,penalty) values('{id}','{u.isim}','{u.soyisim}','{u.kullaniciadi}','{u.mailadresi}','{u.sifre}','-1','0','{null}','{null}','0');";
 
             SqlCommand command = new SqlCommand(query, connection);
             command.ExecuteNonQuery();
@@ -143,7 +143,7 @@ namespace LibraryProject
         public static void UpdateUser(User user)
         {
             SqlConnection connection = new SqlConnection(connectionstring);
-            string query = $"update dbo.users set name='{user.isim}',surname='{user.soyisim}',username='{user.kullaniciadi}',password='{user.sifre}',status='1' where id={user.id};";
+            string query = $"update dbo.users set name='{user.isim}',surname='{user.soyisim}',username='{user.kullaniciadi}',password='{user.sifre}',status='{user.status}' where id={user.id};";
             SqlCommand command = new SqlCommand(query, connection);
             connection.Open();
             command.ExecuteNonQuery();
@@ -151,5 +151,98 @@ namespace LibraryProject
 
 
         }
+
+        public static void DeleteUser(User user)
+        {
+            SqlConnection connection = new SqlConnection(connectionstring);
+            string query = $"delete from  dbo.users where id={user.id};";
+            SqlCommand command = new SqlCommand(query, connection);
+            connection.Open();
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
+
+        public static List<User> GetUserList(string status)
+        {
+            SqlConnection connection = new SqlConnection(connectionstring);
+            string query = $"select * from dbo.users where status=  '{status}';";
+            SqlCommand command = new SqlCommand(query, connection);
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            if (!reader.HasRows)
+            {
+                return null;
+
+            }
+            List<User> users = new List<User>();
+
+            while (reader.Read())
+            {
+               
+                User user = new User(reader["name"].ToString(), reader["surname"].ToString(), reader["username"].ToString(), reader["mail"].ToString(), reader["password"].ToString());
+                user.id = reader["id"].ToString();
+                users.Add(user);
+
+            }
+            connection.Close();
+            return users;
+        }
+
+        public static List<Kitap> GetBookList(string isim, string yazar)
+        {
+            SqlConnection connection = new SqlConnection(connectionstring);
+            string query = $"select * from dbo.books where name like '%{isim}%' and author like '%{yazar}%';";
+            SqlCommand command = new SqlCommand(query, connection);
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            if (!reader.HasRows)
+            {
+                return null;
+
+            }
+            List<Kitap> books = new List<Kitap>();
+
+            while (reader.Read())
+            {
+                
+                Kitap book = new Kitap();
+                
+                book.id = reader["id"].ToString();
+                book.yazar = reader["author"].ToString();
+                book.isim = reader["name"].ToString();
+                book.basimyili = DateTime.Parse( reader["pubyear"].ToString()).Year.ToString();
+                book.kopyasayisi = reader["copycount"].ToString();
+                book.tur = reader["type"].ToString();
+                book.sayfasayisi =Convert.ToInt32( reader["pagecount"].ToString());
+                books.Add(book);
+
+            }
+            connection.Close();
+            return books;
+        }
+
+
+        public static void UpdateBook(Kitap book)
+        {
+            SqlConnection connection = new SqlConnection(connectionstring);
+            string query = $"update dbo.books set name='{book.isim}',author='{book.yazar}',type='{book.tur}',pubyear='{book.basimyili}',pagecount='{book.sayfasayisi}',copycount='{book.kopyasayisi}' where id={book.id};";
+            SqlCommand command = new SqlCommand(query, connection);
+            connection.Open();
+            command.ExecuteNonQuery();
+            connection.Close();
+
+        }
+
+        public static void DeleteBook(Kitap book)
+        {
+            SqlConnection connection = new SqlConnection(connectionstring);
+            string query = $"delete from  dbo.books where id={book.id};";
+            SqlCommand command = new SqlCommand(query, connection);
+            connection.Open();
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
+
+
     }
 }

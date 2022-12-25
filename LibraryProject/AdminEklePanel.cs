@@ -55,9 +55,18 @@ namespace LibraryProject
             }
             else
             {
-                Helper.UpdateUser((User)listBox1.SelectedItem);
+                User user = (User)listBox1.SelectedItem;
+                user.status = "1";
+                Helper.UpdateUser(user);
                 MessageBox.Show("Üye admin olarak değiştirildi.");
             }
+        }
+
+        private void menubutton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuPanel menu = new MenuPanel();
+            menu.Show();
         }
     }
 }

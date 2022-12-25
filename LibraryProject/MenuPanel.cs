@@ -50,5 +50,12 @@ namespace LibraryProject
             AdminEklePanel adminekle = new AdminEklePanel();
             adminekle.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            KitapIslemPanel kitapislem = new KitapIslemPanel();
+            kitapislem.Show();
+        }
     }
 }

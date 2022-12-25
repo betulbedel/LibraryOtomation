@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.IO;
 
 namespace LibraryProject
 {
@@ -147,6 +148,29 @@ namespace LibraryProject
             this.Hide();
             MenuPanel menupanel = new MenuPanel();
             menupanel.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Filter = "json dosyası |*.json";
+          
+            
+            if (dialog.ShowDialog()==DialogResult.OK) //klasörde seçilip ok a basılmasını bekler.
+            {
+                string path = dialog.FileName;
+                string content = File.ReadAllText(path); //dosyayı string olarak okur.
+
+               List<Kitap> books= Newtonsoft.Json.JsonConvert.DeserializeObject<List<Kitap>>(content);
+                foreach(Kitap book in books)
+                {
+                    Helper.AddBookToDatabase(book);
+                }
+
+                MessageBox.Show("Kitap listesi eklendi.");
+                return;
+            }
+
         }
     }
 }

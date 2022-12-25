@@ -1,0 +1,802 @@
+[
+  {
+    "yazar": "Chinua Achebe",
+    "sayfasayisi": 209,
+    "isim": "Things Fall Apart",
+    "basimyili": 1958,
+    "kopyasayisi": "11",
+    "tur": "Macera"
+  },
+  {
+    "yazar": "Hans Christian Andersen",
+    "sayfasayisi": 784,
+    "isim": "Fairy tales",
+    "basimyili": 1836,
+    "kopyasayisi": "9",
+    "tur": "Romantik"
+  },
+  {
+    "yazar": "Dante Alighieri",
+    "sayfasayisi": 928,
+    "isim": "The Divine Comedy",
+    "basimyili": 2008,
+    "kopyasayisi": "11",
+    "tur": "Korku"
+  },
+  {
+    "yazar": "Unknown",
+    "sayfasayisi": 160,
+    "isim": "The Epic Of Gilgamesh",
+    "basimyili": 2010,
+    "kopyasayisi": "2",
+    "tur": "Psikoloji"
+  },
+  {
+    "yazar": "Unknown",
+    "sayfasayisi": 176,
+    "isim": "The Book Of Job",
+    "basimyili": 2010,
+    "kopyasayisi": "14",
+    "tur": "Korku"
+  },
+  {
+    "yazar": "Unknown",
+    "sayfasayisi": 288,
+    "isim": "One Thousand and One Nights",
+    "basimyili": 2008,
+    "kopyasayisi": "13",
+    "tur": "Korku"
+  },
+  {
+    "yazar": "Unknown",
+    "sayfasayisi": 384,
+    "isim": "Nj\u00e1l s Saga",
+    "basimyili": 2008,
+    "kopyasayisi": "4",
+    "tur": "Tarih"
+  },
+  {
+    "yazar": "Jane Austen",
+    "sayfasayisi": 226,
+    "isim": "Pride and Prejudice",
+    "basimyili": 1813,
+    "kopyasayisi": "7",
+    "tur": "Korku"
+  },
+  {
+    "yazar": "Honor\u00e9 de Balzac",
+    "sayfasayisi": 443,
+    "isim": "Le P\u00e8re Goriot",
+    "basimyili": 1835,
+    "kopyasayisi": "12",
+    "tur": "Romantik"
+  },
+  {
+    "yazar": "Samuel Beckett",
+    "sayfasayisi": 256,
+    "isim": "Molloy, Malone Dies, The Unnamable, the trilogy",
+    "basimyili": 1952,
+    "kopyasayisi": "5",
+    "tur": "Tarih"
+  },
+  {
+    "yazar": "Giovanni Boccaccio",
+    "sayfasayisi": 1024,
+    "isim": "The Decameron",
+    "basimyili": 2008,
+    "kopyasayisi": "8",
+    "tur": "Macera"
+  },
+  {
+    "yazar": "Jorge Luis Borges",
+    "sayfasayisi": 224,
+    "isim": "Ficciones",
+    "basimyili": 1965,
+    "kopyasayisi": "4",
+    "tur": "Psikoloji"
+  },
+  {
+    "yazar": "Emily Bront\u00eb",
+    "sayfasayisi": 342,
+    "isim": "Wuthering Heights",
+    "basimyili": 1847,
+    "kopyasayisi": "13",
+    "tur": "Edebiyat"
+  },
+  {
+    "yazar": "Albert Camus",
+    "sayfasayisi": 185,
+    "isim": "The Stranger",
+    "basimyili": 1942,
+    "kopyasayisi": "13",
+    "tur": "Psikoloji"
+  },
+  {
+    "yazar": "Paul Celan",
+    "sayfasayisi": 320,
+    "isim": "Poems",
+    "basimyili": 1952,
+    "kopyasayisi": "5",
+    "tur": "Tarih"
+  },
+  {
+    "yazar": "Louis-Ferdinand C\u00e9line",
+    "sayfasayisi": 505,
+    "isim": "Journey to the End of the Night",
+    "basimyili": 1932,
+    "kopyasayisi": "1",
+    "tur": "Edebiyat"
+  },
+  {
+    "yazar": "Miguel de Cervantes",
+    "sayfasayisi": 1056,
+    "isim": "Don Quijote De La Mancha",
+    "basimyili": 2008,
+    "kopyasayisi": "11",
+    "tur": "Romantik"
+  },
+  {
+    "yazar": "Geoffrey Chaucer",
+    "sayfasayisi": 544,
+    "isim": "The Canterbury Tales",
+    "basimyili": 2008,
+    "kopyasayisi": "11",
+    "tur": "Edebiyat"
+  },
+  {
+    "yazar": "Anton Chekhov",
+    "sayfasayisi": 194,
+    "isim": "Stories",
+    "basimyili": 1886,
+    "kopyasayisi": "15",
+    "tur": "Romantik"
+  },
+  {
+    "yazar": "Joseph Conrad",
+    "sayfasayisi": 320,
+    "isim": "Nostromo",
+    "basimyili": 1904,
+    "kopyasayisi": "15",
+    "tur": "Macera"
+  },
+  {
+    "yazar": "Charles Dickens",
+    "sayfasayisi": 194,
+    "isim": "Great Expectations",
+    "basimyili": 1861,
+    "kopyasayisi": "15",
+    "tur": "Psikoloji"
+  },
+  {
+    "yazar": "Denis Diderot",
+    "sayfasayisi": 596,
+    "isim": "Jacques the Fatalist",
+    "basimyili": 2008,
+    "kopyasayisi": "6",
+    "tur": "Korku"
+  },
+  {
+    "yazar": "Alfred D\u00f6blin",
+    "sayfasayisi": 600,
+    "isim": "Berlin Alexanderplatz",
+    "basimyili": 1929,
+    "kopyasayisi": "12",
+    "tur": "Macera"
+  },
+  {
+    "yazar": "Fyodor Dostoevsky",
+    "sayfasayisi": 551,
+    "isim": "Crime and Punishment",
+    "basimyili": 1866,
+    "kopyasayisi": "10",
+    "tur": "Romantik"
+  },
+  {
+    "yazar": "Fyodor Dostoevsky",
+    "sayfasayisi": 656,
+    "isim": "The Idiot",
+    "basimyili": 1869,
+    "kopyasayisi": "2",
+    "tur": "Tarih"
+  },
+  {
+    "yazar": "Fyodor Dostoevsky",
+    "sayfasayisi": 768,
+    "isim": "The Possessed",
+    "basimyili": 1872,
+    "kopyasayisi": "12",
+    "tur": "Tarih"
+  },
+  {
+    "yazar": "Fyodor Dostoevsky",
+    "sayfasayisi": 824,
+    "isim": "The Brothers Karamazov",
+    "basimyili": 1880,
+    "kopyasayisi": "15",
+    "tur": "Tarih"
+  },
+  {
+    "yazar": "George Eliot",
+    "sayfasayisi": 800,
+    "isim": "Middlemarch",
+    "basimyili": 1871,
+    "kopyasayisi": "12",
+    "tur": "Tarih"
+  },
+  {
+    "yazar": "Ralph Ellison",
+    "sayfasayisi": 581,
+    "isim": "Invisible Man",
+    "basimyili": 1952,
+    "kopyasayisi": "4",
+    "tur": "Korku"
+  },
+  {
+    "yazar": "Euripides",
+    "sayfasayisi": 104,
+    "isim": "Medea",
+    "basimyili": 2010,
+    "kopyasayisi": "7",
+    "tur": "Macera"
+  },
+  {
+    "yazar": "William Faulkner",
+    "sayfasayisi": 313,
+    "isim": "Absalom, Absalom!",
+    "basimyili": 1936,
+    "kopyasayisi": "2",
+    "tur": "Edebiyat"
+  },
+  {
+    "yazar": "William Faulkner",
+    "sayfasayisi": 326,
+    "isim": "The Sound and the Fury",
+    "basimyili": 1929,
+    "kopyasayisi": "9",
+    "tur": "Tarih"
+  },
+  {
+    "yazar": "Gustave Flaubert",
+    "sayfasayisi": 528,
+    "isim": "Madame Bovary",
+    "basimyili": 1857,
+    "kopyasayisi": "7",
+    "tur": "Korku"
+  },
+  {
+    "yazar": "Gustave Flaubert",
+    "sayfasayisi": 606,
+    "isim": "Sentimental Education",
+    "basimyili": 1869,
+    "kopyasayisi": "8",
+    "tur": "Edebiyat"
+  },
+  {
+    "yazar": "Federico Garc\u00eda Lorca",
+    "sayfasayisi": 218,
+    "isim": "Gypsy Ballads",
+    "basimyili": 1928,
+    "kopyasayisi": "5",
+    "tur": "Romantik"
+  },
+  {
+    "yazar": "Gabriel Garc\u00eda M\u00e1rquez",
+    "sayfasayisi": 417,
+    "isim": "One Hundred basimyilis of Solitude",
+    "basimyili": 1967,
+    "kopyasayisi": "5",
+    "tur": "Romantik"
+  },
+  {
+    "yazar": "Gabriel Garc\u00eda M\u00e1rquez",
+    "sayfasayisi": 368,
+    "isim": "Love in the Time of Cholera",
+    "basimyili": 1985,
+    "kopyasayisi": "11",
+    "tur": "Tarih"
+  },
+  {
+    "yazar": "Johann Wolfgang von Goethe",
+    "sayfasayisi": 158,
+    "isim": "Faust",
+    "basimyili": 1832,
+    "kopyasayisi": "9",
+    "tur": "Korku"
+  },
+  {
+    "yazar": "Nikolai Gogol",
+    "sayfasayisi": 432,
+    "isim": "Dead Souls",
+    "basimyili": 1842,
+    "kopyasayisi": "5",
+    "tur": "Macera"
+  },
+  {
+    "yazar": "G\u00fcnter Grass",
+    "sayfasayisi": 600,
+    "isim": "The Tin Drum",
+    "basimyili": 1959,
+    "kopyasayisi": "15",
+    "tur": "Tarih"
+  },
+  {
+    "yazar": "Jo\u00e3o Guimar\u00e3es Rosa",
+    "sayfasayisi": 494,
+    "isim": "The Devil to Pay in the Backlands",
+    "basimyili": 1956,
+    "kopyasayisi": "9",
+    "tur": "Romantik"
+  },
+  {
+    "yazar": "Knut Hamsun",
+    "sayfasayisi": 176,
+    "isim": "Hunger",
+    "basimyili": 1890,
+    "kopyasayisi": "10",
+    "tur": "Tarih"
+  },
+  {
+    "yazar": "Ernest Hemingway",
+    "sayfasayisi": 128,
+    "isim": "The Old Man and the Sea",
+    "basimyili": 1952,
+    "kopyasayisi": "13",
+    "tur": "Psikoloji"
+  },
+  {
+    "yazar": "Homer",
+    "sayfasayisi": 608,
+    "isim": "Iliad",
+    "basimyili": 2010,
+    "kopyasayisi": "1",
+    "tur": "Macera"
+  },
+  {
+    "yazar": "Homer",
+    "sayfasayisi": 374,
+    "isim": "Odyssey",
+    "basimyili": 2010,
+    "kopyasayisi": "5",
+    "tur": "Romantik"
+  },
+  {
+    "yazar": "Henrik Ibsen",
+    "sayfasayisi": 68,
+    "isim": "A Doll s House",
+    "basimyili": 1879,
+    "kopyasayisi": "13",
+    "tur": "Psikoloji"
+  },
+  {
+    "yazar": "James Joyce",
+    "sayfasayisi": 228,
+    "isim": "Ulysses",
+    "basimyili": 1922,
+    "kopyasayisi": "15",
+    "tur": "Romantik"
+  },
+  {
+    "yazar": "Franz Kafka",
+    "sayfasayisi": 488,
+    "isim": "Stories",
+    "basimyili": 1924,
+    "kopyasayisi": "2",
+    "tur": "Edebiyat"
+  },
+  {
+    "yazar": "Franz Kafka",
+    "sayfasayisi": 160,
+    "isim": "The Trial",
+    "basimyili": 1925,
+    "kopyasayisi": "13",
+    "tur": "Korku"
+  },
+  {
+    "yazar": "Franz Kafka",
+    "sayfasayisi": 352,
+    "isim": "The Castle",
+    "basimyili": 1926,
+    "kopyasayisi": "11",
+    "tur": "Korku"
+  },
+  {
+    "yazar": "K\u0101lid\u0101sa",
+    "sayfasayisi": 147,
+    "isim": "The recognition of Shakuntala",
+    "basimyili": 2008,
+    "kopyasayisi": "6",
+    "tur": "Psikoloji"
+  },
+  {
+    "yazar": "Yasunari Kawabata",
+    "sayfasayisi": 288,
+    "isim": "The Sound of the Mountain",
+    "basimyili": 1954,
+    "kopyasayisi": "12",
+    "tur": "Macera"
+  },
+  {
+    "yazar": "Nikos Kazantzakis",
+    "sayfasayisi": 368,
+    "isim": "Zorba the Greek",
+    "basimyili": 1946,
+    "kopyasayisi": "14",
+    "tur": "Romantik"
+  },
+  {
+    "yazar": "D. H. Lawrence",
+    "sayfasayisi": 432,
+    "isim": "Sons and Lovers",
+    "basimyili": 1913,
+    "kopyasayisi": "2",
+    "tur": "Romantik"
+  },
+  {
+    "yazar": "Halld\u00f3r Laxness",
+    "sayfasayisi": 470,
+    "isim": "Independent People",
+    "basimyili": 1934,
+    "kopyasayisi": "13",
+    "tur": "Macera"
+  },
+  {
+    "yazar": "Giacomo Leopardi",
+    "sayfasayisi": 184,
+    "isim": "Poems",
+    "basimyili": 1818,
+    "kopyasayisi": "1",
+    "tur": "Korku"
+  },
+  {
+    "yazar": "Doris Lessing",
+    "sayfasayisi": 688,
+    "isim": "The Golden Notebook",
+    "basimyili": 1962,
+    "kopyasayisi": "4",
+    "tur": "Macera"
+  },
+  {
+    "yazar": "Astrid Lindgren",
+    "sayfasayisi": 160,
+    "isim": "Pippi Longstocking",
+    "basimyili": 1945,
+    "kopyasayisi": "3",
+    "tur": "Romantik"
+  },
+  {
+    "yazar": "Lu Xun",
+    "sayfasayisi": 389,
+    "isim": "Diary of a Madman",
+    "basimyili": 1918,
+    "kopyasayisi": "4",
+    "tur": "Romantik"
+  },
+  {
+    "yazar": "Naguib Mahfouz",
+    "sayfasayisi": 355,
+    "isim": "Children of Gebelawi",
+    "basimyili": 1959,
+    "kopyasayisi": "12",
+    "tur": "Macera"
+  },
+  {
+    "yazar": "Thomas Mann",
+    "sayfasayisi": 736,
+    "isim": "Buddenbrooks",
+    "basimyili": 1901,
+    "kopyasayisi": "14",
+    "tur": "Tarih"
+  },
+  {
+    "yazar": "Thomas Mann",
+    "sayfasayisi": 720,
+    "isim": "The Magic Mountain",
+    "basimyili": 1924,
+    "kopyasayisi": "14",
+    "tur": "Edebiyat"
+  },
+  {
+    "yazar": "Herman Melville",
+    "sayfasayisi": 378,
+    "isim": "Moby Dick",
+    "basimyili": 1851,
+    "kopyasayisi": "9",
+    "tur": "Macera"
+  },
+  {
+    "yazar": "Michel de Montaigne",
+    "sayfasayisi": 404,
+    "isim": "Essays",
+    "basimyili": 2008,
+    "kopyasayisi": "9",
+    "tur": "Korku"
+  },
+  {
+    "yazar": "Elsa Morante",
+    "sayfasayisi": 600,
+    "isim": "History",
+    "basimyili": 1974,
+    "kopyasayisi": "8",
+    "tur": "Romantik"
+  },
+  {
+    "yazar": "Toni Morrison",
+    "sayfasayisi": 321,
+    "isim": "Beloved",
+    "basimyili": 1987,
+    "kopyasayisi": "2",
+    "tur": "Macera"
+  },
+  {
+    "yazar": "Murasaki Shikibu",
+    "sayfasayisi": 1360,
+    "isim": "The Tale of Genji",
+    "basimyili": 2008,
+    "kopyasayisi": "13",
+    "tur": "Korku"
+  },
+  {
+    "yazar": "Robert Musil",
+    "sayfasayisi": 365,
+    "isim": "The Man Without Qualities",
+    "basimyili": 1931,
+    "kopyasayisi": "12",
+    "tur": "Macera"
+  },
+  {
+    "yazar": "Vladimir Nabokov",
+    "sayfasayisi": 317,
+    "isim": "Lolita",
+    "basimyili": 1955,
+    "kopyasayisi": "6",
+    "tur": "Tarih"
+  },
+  {
+    "yazar": "George Orwell",
+    "sayfasayisi": 272,
+    "isim": "Nineteen Eighty-Four",
+    "basimyili": 1949,
+    "kopyasayisi": "6",
+    "tur": "Macera"
+  },
+  {
+    "yazar": "Ovid",
+    "sayfasayisi": 576,
+    "isim": "Metamorphoses",
+    "basimyili": 2008,
+    "kopyasayisi": "13",
+    "tur": "Tarih"
+  },
+  {
+    "yazar": "Fernando Pessoa",
+    "sayfasayisi": 272,
+    "isim": "The Book of Disquiet",
+    "basimyili": 1928,
+    "kopyasayisi": "14",
+    "tur": "Macera"
+  },
+  {
+    "yazar": "Edgar Allan Poe",
+    "sayfasayisi": 842,
+    "isim": "Tales",
+    "basimyili": 1950,
+    "kopyasayisi": "5",
+    "tur": "Edebiyat"
+  },
+  {
+    "yazar": "Marcel Proust",
+    "sayfasayisi": 2408,
+    "isim": "In Search of Lost Time",
+    "basimyili": 1920,
+    "kopyasayisi": "1",
+    "tur": "Psikoloji"
+  },
+  {
+    "yazar": "Fran\u00e7ois Rabelais",
+    "sayfasayisi": 623,
+    "isim": "Gargantua and Pantagruel",
+    "basimyili": 2008,
+    "kopyasayisi": "6",
+    "tur": "Tarih"
+  },
+  {
+    "yazar": "Juan Rulfo",
+    "sayfasayisi": 124,
+    "isim": "Pedro P\u00e1ramo",
+    "basimyili": 1955,
+    "kopyasayisi": "12",
+    "tur": "Psikoloji"
+  },
+  {
+    "yazar": "Rumi",
+    "sayfasayisi": 438,
+    "isim": "The Masnavi",
+    "basimyili": 2008,
+    "kopyasayisi": "5",
+    "tur": "Romantik"
+  },
+  {
+    "yazar": "Salman Rushdie",
+    "sayfasayisi": 536,
+    "isim": "Midnight s Children",
+    "basimyili": 1981,
+    "kopyasayisi": "9",
+    "tur": "Tarih"
+  },
+  {
+    "yazar": "Saadi",
+    "sayfasayisi": 298,
+    "isim": "Bostan",
+    "basimyili": 2008,
+    "kopyasayisi": "15",
+    "tur": "Macera"
+  },
+  {
+    "yazar": "Tayeb Salih",
+    "sayfasayisi": 139,
+    "isim": "Season of Migration to the North",
+    "basimyili": 1966,
+    "kopyasayisi": "15",
+    "tur": "Edebiyat"
+  },
+  {
+    "yazar": "Jos\u00e9 Saramago",
+    "sayfasayisi": 352,
+    "isim": "Blindness",
+    "basimyili": 1995,
+    "kopyasayisi": "6",
+    "tur": "Macera"
+  },
+  {
+    "yazar": "William Shakespeare",
+    "sayfasayisi": 432,
+    "isim": "Hamlet",
+    "basimyili": 2008,
+    "kopyasayisi": "5",
+    "tur": "Romantik"
+  },
+  {
+    "yazar": "William Shakespeare",
+    "sayfasayisi": 384,
+    "isim": "King Lear",
+    "basimyili": 2008,
+    "kopyasayisi": "9",
+    "tur": "Korku"
+  },
+  {
+    "yazar": "William Shakespeare",
+    "sayfasayisi": 314,
+    "isim": "Othello",
+    "basimyili": 2008,
+    "kopyasayisi": "8",
+    "tur": "Korku"
+  },
+  {
+    "yazar": "Sophocles",
+    "sayfasayisi": 88,
+    "isim": "Oedipus the King",
+    "basimyili": 2010,
+    "kopyasayisi": "6",
+    "tur": "Romantik"
+  },
+  {
+    "yazar": "Stendhal",
+    "sayfasayisi": 576,
+    "isim": "The Red and the Black",
+    "basimyili": 1830,
+    "kopyasayisi": "12",
+    "tur": "Psikoloji"
+  },
+  {
+    "yazar": "Laurence Sterne",
+    "sayfasayisi": 640,
+    "isim": "The Life And Opinions of Tristram Shandy",
+    "basimyili": 2008,
+    "kopyasayisi": "12",
+    "tur": "Edebiyat"
+  },
+  {
+    "yazar": "Italo Svevo",
+    "sayfasayisi": 412,
+    "isim": "Confessions of Zeno",
+    "basimyili": 1923,
+    "kopyasayisi": "12",
+    "tur": "Psikoloji"
+  },
+  {
+    "yazar": "Jonathan Swift",
+    "sayfasayisi": 178,
+    "isim": "Gulliver s Travels",
+    "basimyili": 2008,
+    "kopyasayisi": "10",
+    "tur": "Tarih"
+  },
+  {
+    "yazar": "Leo Tolstoy",
+    "sayfasayisi": 1296,
+    "isim": "War and Peace",
+    "basimyili": 1867,
+    "kopyasayisi": "4",
+    "tur": "Psikoloji"
+  },
+  {
+    "yazar": "Leo Tolstoy",
+    "sayfasayisi": 864,
+    "isim": "Anna Karenina",
+    "basimyili": 1877,
+    "kopyasayisi": "11",
+    "tur": "Romantik"
+  },
+  {
+    "yazar": "Leo Tolstoy",
+    "sayfasayisi": 92,
+    "isim": "The Death of Ivan Ilyich",
+    "basimyili": 1886,
+    "kopyasayisi": "6",
+    "tur": "Edebiyat"
+  },
+  {
+    "yazar": "Mark Twain",
+    "sayfasayisi": 224,
+    "isim": "The Adventures of Huckleberry Finn",
+    "basimyili": 1884,
+    "kopyasayisi": "12",
+    "tur": "Romantik"
+  },
+  {
+    "yazar": "Valmiki",
+    "sayfasayisi": 152,
+    "isim": "Ramayana",
+    "basimyili": 2010,
+    "kopyasayisi": "5",
+    "tur": "Korku"
+  },
+  {
+    "yazar": "Virgil",
+    "sayfasayisi": 442,
+    "isim": "The Aeneid",
+    "basimyili": 2010,
+    "kopyasayisi": "10",
+    "tur": "Edebiyat"
+  },
+  {
+    "yazar": "Vyasa",
+    "sayfasayisi": 276,
+    "isim": "Mahabharata",
+    "basimyili": 2010,
+    "kopyasayisi": "12",
+    "tur": "Romantik"
+  },
+  {
+    "yazar": "Walt Whitman",
+    "sayfasayisi": 152,
+    "isim": "Leaves of Grass",
+    "basimyili": 1855,
+    "kopyasayisi": "3",
+    "tur": "Romantik"
+  },
+  {
+    "yazar": "Virginia Woolf",
+    "sayfasayisi": 216,
+    "isim": "Mrs Dalloway",
+    "basimyili": 1925,
+    "kopyasayisi": "13",
+    "tur": "Tarih"
+  },
+  {
+    "yazar": "Virginia Woolf",
+    "sayfasayisi": 209,
+    "isim": "To the Lighthouse",
+    "basimyili": 1927,
+    "kopyasayisi": "12",
+    "tur": "Psikoloji"
+  },
+  {
+    "yazar": "Marguerite Yourcenar",
+    "sayfasayisi": 408,
+    "isim": "Memoirs of Hadrian",
+    "basimyili": 1951,
+    "kopyasayisi": "6",
+    "tur": "Korku"
+  }
+]

@@ -88,6 +88,7 @@ namespace LibraryProject
 
             User u = new User(isimtextBox.Text,soyisimtextBox.Text,kullaniciaditextBox.Text,mailtextBox.Text,sifretextBox.Text);
             Helper.AddUserToDatabase(u);
+            MessageBox.Show("Kayıt isteğiniz iletildi. Lütfen onaylanıncaya kadar bekleyin tekrar giriş yapın.");
 
         }
 
@@ -127,6 +128,11 @@ namespace LibraryProject
             sifrekontrolinfo.Text = string.Empty;
         }
 
-
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Giris giris = new Giris();
+            giris.Show();
+        }
     }
 }

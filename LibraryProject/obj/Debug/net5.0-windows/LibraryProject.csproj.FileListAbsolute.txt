@@ -52,3 +52,5 @@ C:\Users\bedel\LibraryOtomation\LibraryProject\obj\Debug\net5.0-windows\LibraryP
 C:\Users\bedel\LibraryOtomation\LibraryProject\obj\Debug\net5.0-windows\LibraryProject.UyeEklePanel.resources
 C:\Users\bedel\LibraryOtomation\LibraryProject\obj\Debug\net5.0-windows\LibraryProject.UyeIslemPanel.resources
 C:\Users\bedel\LibraryOtomation\LibraryProject\obj\Debug\net5.0-windows\LibraryProject.AdminEklePanel.resources
+C:\Users\bedel\LibraryOtomation\LibraryProject\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+C:\Users\bedel\LibraryOtomation\LibraryProject\obj\Debug\net5.0-windows\LibraryProject.KitapIslemPanel.resources

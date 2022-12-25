@@ -83,6 +83,36 @@ namespace LibraryProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap guncelleme {
+            get {
+                object obj = ResourceManager.GetObject("guncelleme", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gunclleme2 {
+            get {
+                object obj = ResourceManager.GetObject("gunclleme2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gunclleme21 {
+            get {
+                object obj = ResourceManager.GetObject("gunclleme21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kitap2 {
             get {
                 object obj = ResourceManager.GetObject("kitap2", resourceCulture);
@@ -146,6 +176,26 @@ namespace LibraryProject.Properties {
         internal static System.Drawing.Bitmap odunc3 {
             get {
                 object obj = ResourceManager.GetObject("odunc3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap silme2 {
+            get {
+                object obj = ResourceManager.GetObject("silme2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap silme21 {
+            get {
+                object obj = ResourceManager.GetObject("silme21", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

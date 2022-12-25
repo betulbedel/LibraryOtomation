@@ -8,11 +8,11 @@ namespace LibraryProject
 {
    public class User
     {
-        public string isim { get; private set; } //setlenemez
-        public string soyisim { get; private set; }
-        public string kullaniciadi { get; private set; }
-        public string mailadresi { get; private set; }
-        public string sifre { get; private set; }
+        public string isim { get;  set; } //setlenemez
+        public string soyisim { get;  set; }
+        public string kullaniciadi { get;  set; }
+        public string mailadresi { get;  set; }
+        public string sifre { get;  set; }
         public string id { get;  set; }
         public string status { get; set; }
         

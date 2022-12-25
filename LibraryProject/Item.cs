@@ -8,6 +8,7 @@ namespace LibraryProject
 {
     public class Item
     {
+        public string id { get; set; }
         public string isim { get; set; }
         public string kopyasayisi { get; set; }
         public string basimyili { get; set; }
