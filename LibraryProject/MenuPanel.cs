@@ -57,5 +57,19 @@ namespace LibraryProject
             KitapIslemPanel kitapislem = new KitapIslemPanel();
             kitapislem.Show();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AdminIslemPanel admin = new AdminIslemPanel();
+            admin.Show();
+        }
+
+        private void oduncbutton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            OduncVerPanel oduncpanel = new OduncVerPanel();
+            oduncpanel.Show();
+        }
     }
 }

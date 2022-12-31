@@ -10,33 +10,36 @@ using System.Windows.Forms;
 
 namespace LibraryProject
 {
-    public partial class UyeIslemPanel : Form
+    public partial class AdminIslemPanel : Form
     {
         List<User> users = new List<User>();
-        public UyeIslemPanel()
+
+        public AdminIslemPanel()
         {
             InitializeComponent();
         }
 
-        private void UyeAra(bool isbuttonclicked=false)
+
+        private void AdminAra(bool isbuttonclicked = false)
         {
 
-            if (string.IsNullOrEmpty(uyeaditextBox.Text))
+            if (string.IsNullOrEmpty(adminaditextBox.Text))
             {
                 MessageBox.Show("Lütfen isim alanını doldurunuz.");
                 return;
             }
-            if (string.IsNullOrEmpty(uyesoyaditextBox.Text))
+            if (string.IsNullOrEmpty(adminsoyaditextBox.Text))
             {
                 MessageBox.Show("Lütfen soyisim giriniz.");
                 return;
             }
-            users = Helper.GetUserList(uyeaditextBox.Text, uyesoyaditextBox.Text);
+            users = Helper.GetAdminList(adminaditextBox.Text, adminsoyaditextBox.Text);
+
             listView1.Items.Clear();
 
-            if (users == null )
+            if (users == null)
             {
-               if(isbuttonclicked) MessageBox.Show("Kullanıcı bulunamadı.");
+                if (isbuttonclicked) MessageBox.Show("Kullanıcı bulunamadı.");
                 return;
             }
 
@@ -51,19 +54,13 @@ namespace LibraryProject
             }
 
         }
-        private void uyearabutton_Click(object sender, EventArgs e)
+
+        private void adminarabutton_Click(object sender, EventArgs e)
         {
-
-            UyeAra(true);
-
+            AdminAra(true);
         }
 
-        private void UyeIslemPanel_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e) //event
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listView1.SelectedItems.Count == 0) return;
 
@@ -72,16 +69,13 @@ namespace LibraryProject
             isimtextBox.Text = selecteditem.SubItems[1].Text; // seçilen kullanıcının ismini designdaki isim kısmına doldurur.
             soyisimtextBox.Text = selecteditem.SubItems[2].Text;
             kullaniciaditextBox.Text = selecteditem.SubItems[3].Text;
-
-
-
         }
 
         private void guncellebutton_Click(object sender, EventArgs e)
         {
             string id = listView1.SelectedItems[0].SubItems[0].Text; //seçilen kişinin idsi alınır.
 
-            foreach(User user in users)
+            foreach (User user in users)
             {
                 if (user.id == id) //idler eşit mi diye kontrol edilir
                 {
@@ -89,32 +83,30 @@ namespace LibraryProject
                     user.soyisim = soyisimtextBox.Text;
                     user.kullaniciadi = kullaniciaditextBox.Text;
 
-                    Helper.UpdateUser(user);
+                    Helper.UpdateAdmin(user);
                     MessageBox.Show("Kullanıcı güncellendi.");
-                    UyeAra();
+                    AdminAra();
                     return;
                 }
             }
-
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
 
-            string id = listView1.SelectedItems[0].SubItems[0].Text; 
+            string id = listView1.SelectedItems[0].SubItems[0].Text;
 
             foreach (User user in users)
             {
                 if (user.id == id) //idler eşit mi diye kontrol edilir
                 {
-                   
-                    Helper.DeleteUser(user);
+
+                    Helper.DeleteAdmin(user);
                     MessageBox.Show("Kullanıcı silindi.");
-                    UyeAra();
+                    AdminAra();
                     return;
                 }
             }
-
         }
 
         private void button1_Click(object sender, EventArgs e)

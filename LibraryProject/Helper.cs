@@ -127,12 +127,17 @@ namespace LibraryProject
 
             while (reader.Read())
             {
-                if (reader["status"].ToString() == "1")
+                if (reader["status"].ToString() == "1" || reader["status"].ToString() == "-1")
                 {
                     continue; //admin olanları listelemez.
                 }
                 User user = new User(reader["name"].ToString(), reader["surname"].ToString(), reader["username"].ToString(), reader["mail"].ToString(), reader["password"].ToString());
                 user.id = reader["id"].ToString();
+                user.borrowdate= reader["borrowdate"].ToString();
+                user.duedate = reader["duedate"].ToString();
+                user.penalty = reader["penalty"].ToString();
+                user.borrowbook = reader["borrowbooks"].ToString();
+
                 users.Add(user);
 
             }
@@ -143,7 +148,7 @@ namespace LibraryProject
         public static void UpdateUser(User user)
         {
             SqlConnection connection = new SqlConnection(connectionstring);
-            string query = $"update dbo.users set name='{user.isim}',surname='{user.soyisim}',username='{user.kullaniciadi}',password='{user.sifre}',status='{user.status}' where id={user.id};";
+            string query = $"update dbo.users set name='{user.isim}',surname='{user.soyisim}',username='{user.kullaniciadi}',password='{user.sifre}',status='{user.status}',borrowbooks='{user.borrowbook}',duedate='{user.duedate}',penalty='{user.penalty}',borrowdate='{user.borrowdate}' where id={user.id};";
             SqlCommand command = new SqlCommand(query, connection);
             connection.Open();
             command.ExecuteNonQuery();
@@ -181,6 +186,11 @@ namespace LibraryProject
                
                 User user = new User(reader["name"].ToString(), reader["surname"].ToString(), reader["username"].ToString(), reader["mail"].ToString(), reader["password"].ToString());
                 user.id = reader["id"].ToString();
+                user.borrowdate = reader["borrowdate"].ToString();
+                user.duedate = reader["duedate"].ToString();
+                user.penalty = reader["penalty"].ToString();
+                user.borrowbook = reader["borrowbooks"].ToString();
+
                 users.Add(user);
 
             }
@@ -242,6 +252,60 @@ namespace LibraryProject
             command.ExecuteNonQuery();
             connection.Close();
         }
+
+
+
+        public static List<User> GetAdminList(string isim, string soyisim)
+        {
+            SqlConnection connection = new SqlConnection(connectionstring);
+            string query = $"select * from dbo.users where name like '%{isim}%' and surname like '%{soyisim}%';";
+            SqlCommand command = new SqlCommand(query, connection);
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            if (!reader.HasRows)
+            {
+                return null;
+
+            }
+            List<User> users = new List<User>();
+
+            while (reader.Read())
+            {
+                if (reader["status"].ToString() == "0" || reader["status"].ToString() == "-1")
+                {
+                    continue; //user olanları listelemez.
+                }
+                User user = new User(reader["name"].ToString(), reader["surname"].ToString(), reader["username"].ToString(), reader["mail"].ToString(), reader["password"].ToString());
+                user.id = reader["id"].ToString();
+                users.Add(user);
+
+            }
+            connection.Close();
+            return users;
+        }
+
+        public static void UpdateAdmin(User user)
+        {
+            SqlConnection connection = new SqlConnection(connectionstring);
+            string query = $"update dbo.users set name='{user.isim}',surname='{user.soyisim}',username='{user.kullaniciadi}',password='{user.sifre}',status='1' where id={user.id};";
+            SqlCommand command = new SqlCommand(query, connection);
+            connection.Open();
+            command.ExecuteNonQuery();
+            connection.Close();
+
+
+        }
+
+        public static void DeleteAdmin(User user)
+        {
+            SqlConnection connection = new SqlConnection(connectionstring);
+            string query = $"delete from  dbo.users where id={user.id};";
+            SqlCommand command = new SqlCommand(query, connection);
+            connection.Open();
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
+
 
 
     }

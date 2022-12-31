@@ -124,5 +124,12 @@ namespace LibraryProject
                 }
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuPanel menu = new MenuPanel();
+            menu.Show();
+        }
     }
 }

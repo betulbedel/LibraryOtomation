@@ -83,6 +83,7 @@ namespace LibraryProject
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.splitContainer1.Panel2.Controls.Add(this.button1);
             this.splitContainer1.Panel2.Controls.Add(this.button2);
             this.splitContainer1.Panel2.Controls.Add(this.pictureBox2);
@@ -102,6 +103,7 @@ namespace LibraryProject
             // 
             // listView1
             // 
+            this.listView1.BackColor = System.Drawing.Color.Tan;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.idColumnHeader,
             this.isimColumnHeader,
@@ -212,6 +214,7 @@ namespace LibraryProject
             this.button1.TabIndex = 11;
             this.button1.Text = "Anasayfaya Dön";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
