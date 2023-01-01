@@ -9,7 +9,7 @@ namespace LibraryProject
     static class Program
     {
         public static User CurrentUser;
-        public static MenuPanel menu;
+        public static Form menu;
         public static Giris giris;
         /// <summary>
         ///  The main entry point for the application.
