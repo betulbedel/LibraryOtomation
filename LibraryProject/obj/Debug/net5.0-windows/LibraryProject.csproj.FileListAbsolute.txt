@@ -56,3 +56,8 @@ C:\Users\bedel\LibraryOtomation\LibraryProject\bin\Debug\net5.0-windows\Newtonso
 C:\Users\bedel\LibraryOtomation\LibraryProject\obj\Debug\net5.0-windows\LibraryProject.KitapIslemPanel.resources
 C:\Users\bedel\LibraryOtomation\LibraryProject\obj\Debug\net5.0-windows\LibraryProject.AdminIslemPanel.resources
 C:\Users\bedel\LibraryOtomation\LibraryProject\obj\Debug\net5.0-windows\LibraryProject.OduncVerPanel.resources
+C:\Users\bedel\LibraryOtomation\LibraryProject\obj\Debug\net5.0-windows\LibraryProject.OduncTeslimPanel.resources
+C:\Users\bedel\LibraryOtomation\LibraryProject\obj\Debug\net5.0-windows\LibraryProject.UserMenuPanel.resources
+C:\Users\bedel\LibraryOtomation\LibraryProject\obj\Debug\net5.0-windows\LibraryProject.UserKitapAraPanel.resources
+C:\Users\bedel\LibraryOtomation\LibraryProject\obj\Debug\net5.0-windows\LibraryProject.UserUyeIslem.resources
+C:\Users\bedel\LibraryOtomation\LibraryProject\obj\Debug\net5.0-windows\LibraryProject.UserOduncTakip.resources

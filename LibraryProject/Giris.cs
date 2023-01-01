@@ -51,7 +51,7 @@ namespace LibraryProject
                 MessageBox.Show("Kullanıcı adı veya şifre yanlış.");
                 return;
             }
-            MessageBox.Show("Giriş başarılı", " TEBRİKLER", MessageBoxButtons.OK );
+           
 
             if (Program.CurrentUser.status == "1")
             {
@@ -60,8 +60,26 @@ namespace LibraryProject
                  adminpanel.Show(); */
                 Program.menu = new MenuPanel();
                 Program.menu.Show();
-                
+                MessageBox.Show("Giriş başarılı", " TEBRİKLER", MessageBoxButtons.OK);
+
             }
+
+           else if (Program.CurrentUser.status == "0")
+            {
+                this.Hide(); //Pencere gizlemek icin
+                /* AdminPanel adminpanel = new AdminPanel();
+                 adminpanel.Show(); */
+                Program.menu = new UserMenuPanel();
+                Program.menu.Show();
+                MessageBox.Show("Giriş başarılı", " TEBRİKLER", MessageBoxButtons.OK);
+            }
+            else
+            {
+                MessageBox.Show("Üyeliğiniz onaylanana kadar giriş yapamazsınız.");
+                return;
+            }
+
+          
         }
     }
 }

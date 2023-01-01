@@ -12,7 +12,7 @@ namespace LibraryProject
         const string connectionstring = "Server= LAPTOP-2AAHS9KO\\SQLEXPRESS;Database= master;Integrated Security= True";
         public static SifreDurumu isPasswordValid(string password)
         {
-            
+
             if (password.Length < 6)
             {
                 return SifreDurumu.yetersizkarakter;
@@ -32,13 +32,13 @@ namespace LibraryProject
                 }
                 else
                 {
-                    
+
                     return SifreDurumu.gecersiz;
                 }
             }
             if (hasnum == false || haschar == false)
             {
-              
+
                 return SifreDurumu.gecersiz;
             }
 
@@ -61,7 +61,7 @@ namespace LibraryProject
             }
 
             string query = $"insert into dbo.books (id, name, author, pubyear, copycount, type, pagecount) values ('{id}','{k.isim}','{k.yazar}','{k.basimyili}','{k.kopyasayisi}','{k.tur}','{k.sayfasayisi}');";
-            
+
             SqlCommand command = new SqlCommand(query, connection);
             command.ExecuteNonQuery();
             connection.Close();
@@ -81,7 +81,7 @@ namespace LibraryProject
             {
                 id = ((int)a) + 1;
             }
-           
+
 
             string query = $"insert into dbo.users (id,name,surname,username,mail,password,status,borrowbooks,borrowdate,duedate,penalty) values('{id}','{u.isim}','{u.soyisim}','{u.kullaniciadi}','{u.mailadresi}','{u.sifre}','-1','0','{null}','{null}','0');";
 
@@ -91,14 +91,14 @@ namespace LibraryProject
 
         }
 
-        
+
         public static User IsUserExist(string kullaniciadi, string sifre)
         {
             SqlConnection connection = new SqlConnection(connectionstring);
             string query = $"select * from dbo.users where username = '{kullaniciadi}' and password='{sifre}';";
-            SqlCommand command = new SqlCommand(query,connection);
+            SqlCommand command = new SqlCommand(query, connection);
             connection.Open();
-            SqlDataReader reader= command.ExecuteReader();
+            SqlDataReader reader = command.ExecuteReader();
             if (!reader.HasRows)
             {
                 return null;
@@ -106,6 +106,11 @@ namespace LibraryProject
             }
             reader.Read();
             User user = new User(reader["name"].ToString(), reader["surname"].ToString(), reader["username"].ToString(), reader["mail"].ToString(), reader["password"].ToString());
+            user.id = reader["id"].ToString();
+            user.borrowdate = reader["borrowdate"].ToString();
+            user.duedate = reader["duedate"].ToString();
+            user.penalty = reader["penalty"].ToString();
+            user.borrowbook = reader["borrowbooks"].ToString();
             user.status = reader["status"].ToString();
             connection.Close();
             return user;
@@ -123,7 +128,7 @@ namespace LibraryProject
                 return null;
 
             }
-            List<User> users = new List<User>(); 
+            List<User> users = new List<User>();
 
             while (reader.Read())
             {
@@ -133,7 +138,7 @@ namespace LibraryProject
                 }
                 User user = new User(reader["name"].ToString(), reader["surname"].ToString(), reader["username"].ToString(), reader["mail"].ToString(), reader["password"].ToString());
                 user.id = reader["id"].ToString();
-                user.borrowdate= reader["borrowdate"].ToString();
+                user.borrowdate = reader["borrowdate"].ToString();
                 user.duedate = reader["duedate"].ToString();
                 user.penalty = reader["penalty"].ToString();
                 user.borrowbook = reader["borrowbooks"].ToString();
@@ -183,7 +188,7 @@ namespace LibraryProject
 
             while (reader.Read())
             {
-               
+
                 User user = new User(reader["name"].ToString(), reader["surname"].ToString(), reader["username"].ToString(), reader["mail"].ToString(), reader["password"].ToString());
                 user.id = reader["id"].ToString();
                 user.borrowdate = reader["borrowdate"].ToString();
@@ -214,16 +219,16 @@ namespace LibraryProject
 
             while (reader.Read())
             {
-                
+
                 Kitap book = new Kitap();
-                
+
                 book.id = reader["id"].ToString();
                 book.yazar = reader["author"].ToString();
                 book.isim = reader["name"].ToString();
-                book.basimyili = DateTime.Parse( reader["pubyear"].ToString()).Year.ToString();
+                book.basimyili = DateTime.Parse(reader["pubyear"].ToString()).Year.ToString();
                 book.kopyasayisi = reader["copycount"].ToString();
                 book.tur = reader["type"].ToString();
-                book.sayfasayisi =Convert.ToInt32( reader["pagecount"].ToString());
+                book.sayfasayisi = Convert.ToInt32(reader["pagecount"].ToString());
                 books.Add(book);
 
             }
@@ -306,6 +311,38 @@ namespace LibraryProject
             connection.Close();
         }
 
+
+        public static Kitap GetBook(string id)
+        {
+            SqlConnection connection = new SqlConnection(connectionstring);
+            string query = $"select * from dbo.books where id='{id}';";
+            SqlCommand command = new SqlCommand(query, connection);
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            if (!reader.HasRows)
+            {
+                return null;
+
+            }
+
+
+            reader.Read();
+
+
+            Kitap book = new Kitap();
+
+            book.id = reader["id"].ToString();
+            book.yazar = reader["author"].ToString();
+            book.isim = reader["name"].ToString();
+            book.basimyili = DateTime.Parse(reader["pubyear"].ToString()).Year.ToString();
+            book.kopyasayisi = reader["copycount"].ToString();
+            book.tur = reader["type"].ToString();
+            book.sayfasayisi = Convert.ToInt32(reader["pagecount"].ToString());
+
+
+            connection.Close();
+            return book;
+        }
 
 
     }

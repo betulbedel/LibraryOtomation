@@ -80,9 +80,10 @@ namespace LibraryProject
             // 
             // yazaraditextBox
             // 
-            this.yazaraditextBox.Location = new System.Drawing.Point(249, 153);
+            this.yazaraditextBox.Location = new System.Drawing.Point(174, 92);
+            this.yazaraditextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.yazaraditextBox.Name = "yazaraditextBox";
-            this.yazaraditextBox.Size = new System.Drawing.Size(150, 31);
+            this.yazaraditextBox.Size = new System.Drawing.Size(106, 23);
             this.yazaraditextBox.TabIndex = 4;
             // 
             // label3
@@ -90,17 +91,19 @@ namespace LibraryProject
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Book Antiqua", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label3.Location = new System.Drawing.Point(109, 153);
+            this.label3.Location = new System.Drawing.Point(76, 92);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 26);
+            this.label3.Size = new System.Drawing.Size(51, 18);
             this.label3.TabIndex = 3;
             this.label3.Text = "Yazar:";
             // 
             // kitapaditextBox
             // 
-            this.kitapaditextBox.Location = new System.Drawing.Point(249, 93);
+            this.kitapaditextBox.Location = new System.Drawing.Point(174, 56);
+            this.kitapaditextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kitapaditextBox.Name = "kitapaditextBox";
-            this.kitapaditextBox.Size = new System.Drawing.Size(150, 31);
+            this.kitapaditextBox.Size = new System.Drawing.Size(106, 23);
             this.kitapaditextBox.TabIndex = 2;
             // 
             // label2
@@ -108,9 +111,10 @@ namespace LibraryProject
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Book Antiqua", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label2.Location = new System.Drawing.Point(74, 93);
+            this.label2.Location = new System.Drawing.Point(52, 56);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 26);
+            this.label2.Size = new System.Drawing.Size(75, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Kitap adı:";
             // 
@@ -119,21 +123,21 @@ namespace LibraryProject
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Book Antiqua", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label1.Location = new System.Drawing.Point(224, 22);
+            this.label1.Location = new System.Drawing.Point(157, 13);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(241, 29);
+            this.label1.Size = new System.Drawing.Size(154, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "ADMİN LİSTELEME";
+            this.label1.Text = "KİTAP LİSTELEME";
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Tan;
             this.button1.Font = new System.Drawing.Font("Book Antiqua", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.button1.Location = new System.Drawing.Point(136, 760);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Location = new System.Drawing.Point(95, 456);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(169, 53);
+            this.button1.Size = new System.Drawing.Size(118, 32);
             this.button1.TabIndex = 11;
             this.button1.Text = "Anasayfaya Dön";
             this.button1.UseVisualStyleBackColor = false;
@@ -144,6 +148,7 @@ namespace LibraryProject
             this.splitContainer1.Cursor = System.Windows.Forms.Cursors.VSplit;
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -178,8 +183,9 @@ namespace LibraryProject
             this.splitContainer1.Panel2.Controls.Add(this.isimtextBox);
             this.splitContainer1.Panel2.Controls.Add(this.label5);
             this.splitContainer1.Panel2.Controls.Add(this.label4);
-            this.splitContainer1.Size = new System.Drawing.Size(1249, 827);
-            this.splitContainer1.SplitterDistance = 783;
+            this.splitContainer1.Size = new System.Drawing.Size(874, 496);
+            this.splitContainer1.SplitterDistance = 547;
+            this.splitContainer1.SplitterWidth = 3;
             this.splitContainer1.TabIndex = 1;
             // 
             // listView1
@@ -196,11 +202,10 @@ namespace LibraryProject
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(4, 263);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.listView1.Location = new System.Drawing.Point(3, 158);
             this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(773, 547);
+            this.listView1.Size = new System.Drawing.Size(542, 330);
             this.listView1.TabIndex = 7;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -245,9 +250,10 @@ namespace LibraryProject
             this.listelebutton.BackColor = System.Drawing.Color.Chocolate;
             this.listelebutton.Font = new System.Drawing.Font("Book Antiqua", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.listelebutton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.listelebutton.Location = new System.Drawing.Point(460, 113);
+            this.listelebutton.Location = new System.Drawing.Point(322, 68);
+            this.listelebutton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listelebutton.Name = "listelebutton";
-            this.listelebutton.Size = new System.Drawing.Size(137, 47);
+            this.listelebutton.Size = new System.Drawing.Size(96, 28);
             this.listelebutton.TabIndex = 5;
             this.listelebutton.Text = "LİSTELE";
             this.listelebutton.UseVisualStyleBackColor = false;
@@ -260,18 +266,18 @@ namespace LibraryProject
             this.dateTimePicker2.CalendarTitleForeColor = System.Drawing.Color.SaddleBrown;
             this.dateTimePicker2.CustomFormat = "yyyy";
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(176, 307);
+            this.dateTimePicker2.Location = new System.Drawing.Point(123, 184);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(141, 31);
+            this.dateTimePicker2.Size = new System.Drawing.Size(100, 23);
             this.dateTimePicker2.TabIndex = 21;
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(176, 245);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboBox1.Location = new System.Drawing.Point(123, 147);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(141, 33);
+            this.comboBox1.Size = new System.Drawing.Size(100, 23);
             this.comboBox1.TabIndex = 19;
             // 
             // label8
@@ -279,19 +285,17 @@ namespace LibraryProject
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Book Antiqua", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label8.Location = new System.Drawing.Point(107, 248);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(75, 149);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(46, 24);
+            this.label8.Size = new System.Drawing.Size(31, 17);
             this.label8.TabIndex = 18;
             this.label8.Text = "Tür:";
             // 
             // kopyasayisitextBox
             // 
-            this.kopyasayisitextBox.Location = new System.Drawing.Point(176, 438);
-            this.kopyasayisitextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.kopyasayisitextBox.Location = new System.Drawing.Point(123, 263);
             this.kopyasayisitextBox.Name = "kopyasayisitextBox";
-            this.kopyasayisitextBox.Size = new System.Drawing.Size(141, 31);
+            this.kopyasayisitextBox.Size = new System.Drawing.Size(100, 23);
             this.kopyasayisitextBox.TabIndex = 15;
             // 
             // label9
@@ -299,19 +303,17 @@ namespace LibraryProject
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Book Antiqua", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label9.Location = new System.Drawing.Point(34, 442);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(24, 265);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(127, 24);
+            this.label9.Size = new System.Drawing.Size(82, 17);
             this.label9.TabIndex = 14;
             this.label9.Text = "Kopya Adeti:";
             // 
             // sayfasayisitextBox
             // 
-            this.sayfasayisitextBox.Location = new System.Drawing.Point(176, 368);
-            this.sayfasayisitextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.sayfasayisitextBox.Location = new System.Drawing.Point(123, 221);
             this.sayfasayisitextBox.Name = "sayfasayisitextBox";
-            this.sayfasayisitextBox.Size = new System.Drawing.Size(141, 31);
+            this.sayfasayisitextBox.Size = new System.Drawing.Size(100, 23);
             this.sayfasayisitextBox.TabIndex = 13;
             // 
             // label10
@@ -319,10 +321,9 @@ namespace LibraryProject
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Book Antiqua", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label10.Location = new System.Drawing.Point(40, 372);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(28, 223);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(127, 24);
+            this.label10.Size = new System.Drawing.Size(81, 17);
             this.label10.TabIndex = 12;
             this.label10.Text = "Sayfa Sayısı:";
             // 
@@ -331,10 +332,9 @@ namespace LibraryProject
             this.button2.BackColor = System.Drawing.Color.Brown;
             this.button2.Font = new System.Drawing.Font("Book Antiqua", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.button2.ForeColor = System.Drawing.SystemColors.Window;
-            this.button2.Location = new System.Drawing.Point(231, 673);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button2.Location = new System.Drawing.Point(162, 404);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(143, 53);
+            this.button2.Size = new System.Drawing.Size(100, 32);
             this.button2.TabIndex = 10;
             this.button2.Text = "KİTABI SİL";
             this.button2.UseVisualStyleBackColor = false;
@@ -343,10 +343,9 @@ namespace LibraryProject
             // pictureBox2
             // 
             this.pictureBox2.Image = global::LibraryProject.Properties.Resources.silme21;
-            this.pictureBox2.Location = new System.Drawing.Point(263, 543);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox2.Location = new System.Drawing.Point(184, 326);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(99, 103);
+            this.pictureBox2.Size = new System.Drawing.Size(69, 62);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
@@ -356,10 +355,9 @@ namespace LibraryProject
             this.guncellebutton.BackColor = System.Drawing.Color.DarkOrange;
             this.guncellebutton.Font = new System.Drawing.Font("Book Antiqua", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.guncellebutton.ForeColor = System.Drawing.Color.Maroon;
-            this.guncellebutton.Location = new System.Drawing.Point(29, 673);
-            this.guncellebutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guncellebutton.Location = new System.Drawing.Point(20, 404);
             this.guncellebutton.Name = "guncellebutton";
-            this.guncellebutton.Size = new System.Drawing.Size(143, 53);
+            this.guncellebutton.Size = new System.Drawing.Size(100, 32);
             this.guncellebutton.TabIndex = 8;
             this.guncellebutton.Text = "GÜNCELLE";
             this.guncellebutton.UseVisualStyleBackColor = false;
@@ -368,10 +366,9 @@ namespace LibraryProject
             // pictureBox1
             // 
             this.pictureBox1.Image = global::LibraryProject.Properties.Resources.gunclleme21;
-            this.pictureBox1.Location = new System.Drawing.Point(51, 560);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(36, 336);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(104, 103);
+            this.pictureBox1.Size = new System.Drawing.Size(73, 62);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
@@ -381,19 +378,17 @@ namespace LibraryProject
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Book Antiqua", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label7.Location = new System.Drawing.Point(29, 307);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(20, 184);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(133, 24);
+            this.label7.Size = new System.Drawing.Size(86, 17);
             this.label7.TabIndex = 5;
             this.label7.Text = "Basım Tarihi:";
             // 
             // yazartextBox
             // 
-            this.yazartextBox.Location = new System.Drawing.Point(176, 170);
-            this.yazartextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.yazartextBox.Location = new System.Drawing.Point(123, 102);
             this.yazartextBox.Name = "yazartextBox";
-            this.yazartextBox.Size = new System.Drawing.Size(141, 31);
+            this.yazartextBox.Size = new System.Drawing.Size(100, 23);
             this.yazartextBox.TabIndex = 4;
             // 
             // label6
@@ -401,19 +396,17 @@ namespace LibraryProject
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Book Antiqua", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label6.Location = new System.Drawing.Point(89, 173);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(62, 104);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(67, 24);
+            this.label6.Size = new System.Drawing.Size(45, 17);
             this.label6.TabIndex = 3;
             this.label6.Text = "Yazar:";
             // 
             // isimtextBox
             // 
-            this.isimtextBox.Location = new System.Drawing.Point(176, 100);
-            this.isimtextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.isimtextBox.Location = new System.Drawing.Point(123, 60);
             this.isimtextBox.Name = "isimtextBox";
-            this.isimtextBox.Size = new System.Drawing.Size(141, 31);
+            this.isimtextBox.Size = new System.Drawing.Size(100, 23);
             this.isimtextBox.TabIndex = 2;
             // 
             // label5
@@ -421,10 +414,9 @@ namespace LibraryProject
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Book Antiqua", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label5.Location = new System.Drawing.Point(71, 105);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(50, 63);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(103, 24);
+            this.label5.Size = new System.Drawing.Size(66, 17);
             this.label5.TabIndex = 1;
             this.label5.Text = "Kitap Adı:";
             // 
@@ -433,20 +425,18 @@ namespace LibraryProject
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Book Antiqua", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label4.Location = new System.Drawing.Point(121, 22);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(85, 13);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(230, 29);
+            this.label4.Size = new System.Drawing.Size(147, 20);
             this.label4.TabIndex = 0;
-            this.label4.Text = "ADMİN BİLGİLERİ";
+            this.label4.Text = "KİTAP BİLGİLERİ";
             // 
             // KitapIslemPanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1249, 827);
+            this.ClientSize = new System.Drawing.Size(874, 496);
             this.Controls.Add(this.splitContainer1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "KitapIslemPanel";
             this.Text = "KitapIslemPanel";
             this.splitContainer1.Panel1.ResumeLayout(false);

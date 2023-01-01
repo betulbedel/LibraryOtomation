@@ -118,9 +118,9 @@ namespace LibraryProject
             this.label1.Location = new System.Drawing.Point(157, 13);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 20);
+            this.label1.Size = new System.Drawing.Size(160, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "ÜYE LİSTELEME";
+            this.label1.Text = "ADMİN LİSTELEME";
             // 
             // button1
             // 
@@ -195,9 +195,9 @@ namespace LibraryProject
             this.label4.ForeColor = System.Drawing.Color.SaddleBrown;
             this.label4.Location = new System.Drawing.Point(85, 13);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(128, 20);
+            this.label4.Size = new System.Drawing.Size(153, 20);
             this.label4.TabIndex = 0;
-            this.label4.Text = "ÜYE BİLGİLERİ";
+            this.label4.Text = "ADMİN BİLGİLERİ";
             // 
             // listView1
             // 

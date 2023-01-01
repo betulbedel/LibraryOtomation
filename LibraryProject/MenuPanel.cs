@@ -40,6 +40,7 @@ namespace LibraryProject
 
         private void cikisbutton_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Program.giris.Logout(); //hide and destroy menupanel on logout
 
         }
@@ -70,6 +71,13 @@ namespace LibraryProject
             this.Hide();
             OduncVerPanel oduncpanel = new OduncVerPanel();
             oduncpanel.Show();
+        }
+
+        private void odunctakipbutton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            OduncTeslimPanel teslim = new OduncTeslimPanel();
+            teslim.Show();
         }
     }
 }

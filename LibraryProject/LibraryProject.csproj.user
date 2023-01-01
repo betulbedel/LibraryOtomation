@@ -19,7 +19,22 @@
     <Compile Update="KitapIslemPanel.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="OduncTeslimPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="OduncVerPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UserKitapAraPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UserMenuPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UserOduncTakip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UserUyeIslem.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UyeIslemPanel.cs">

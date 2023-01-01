@@ -104,7 +104,7 @@ namespace LibraryProject
             // 
             // adminbutton
             // 
-            this.adminbutton.BackColor = System.Drawing.Color.Chocolate;
+            this.adminbutton.BackColor = System.Drawing.Color.Brown;
             this.adminbutton.Font = new System.Drawing.Font("Book Antiqua", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.adminbutton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.adminbutton.Location = new System.Drawing.Point(176, 393);
@@ -128,7 +128,7 @@ namespace LibraryProject
             // 
             // menubutton
             // 
-            this.menubutton.BackColor = System.Drawing.Color.Chocolate;
+            this.menubutton.BackColor = System.Drawing.Color.Peru;
             this.menubutton.Font = new System.Drawing.Font("Book Antiqua", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.menubutton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.menubutton.Location = new System.Drawing.Point(521, 398);

@@ -52,6 +52,7 @@ namespace LibraryProject
             this.kitapadicolumnHeader = new System.Windows.Forms.ColumnHeader();
             this.yazarcolumnHeader = new System.Windows.Forms.ColumnHeader();
             this.kopyasayisicolumnHeader = new System.Windows.Forms.ColumnHeader();
+            this.button1 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.teslimdateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.onaylabutton = new System.Windows.Forms.Button();
@@ -62,7 +63,6 @@ namespace LibraryProject
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.kullanicidtextBox = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -315,6 +315,20 @@ namespace LibraryProject
             this.kopyasayisicolumnHeader.Text = "Kopya Sayısı";
             this.kopyasayisicolumnHeader.Width = 80;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.BurlyWood;
+            this.button1.Font = new System.Drawing.Font("Book Antiqua", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Location = new System.Drawing.Point(131, 388);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(138, 37);
+            this.button1.TabIndex = 42;
+            this.button1.Text = "ANASAYFAYA DÖN";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -417,20 +431,6 @@ namespace LibraryProject
             this.kullanicidtextBox.Name = "kullanicidtextBox";
             this.kullanicidtextBox.Size = new System.Drawing.Size(106, 23);
             this.kullanicidtextBox.TabIndex = 35;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Firebrick;
-            this.button1.Font = new System.Drawing.Font("Book Antiqua", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(131, 388);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(138, 37);
-            this.button1.TabIndex = 42;
-            this.button1.Text = "ANASAYFAYA DÖN";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // OduncVerPanel
             // 
